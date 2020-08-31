@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -e
+yum clean all
+yum makecache

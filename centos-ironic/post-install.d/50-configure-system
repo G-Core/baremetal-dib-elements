@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+## enable root passwordless login
+# echo "disable_root: false" >> /etc/cloud/cloud.cfg.d/50_enable_root_local_access.cfg
+# passwd -d root

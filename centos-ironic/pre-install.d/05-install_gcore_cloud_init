@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -e
+centos_maj_version=$(cat /etc/redhat-release | grep -oE '[0-9]+' | head -n 1)
+
+if [[ "${centos_maj_version}" == "7" ]]; then
+    yum install https://repo.cloud.gc.onl/repository/gcloud/cloud-init-20.2-1.noarch.rpm -y
+else
+    yum install https://repo.cloud.gc.onl/repository/gcloud/cloud-init-20.2-1.el8.noarch.rpm -y
+    systemctl stop NetworkManager
+    yum install network-scripts -y
+fi
