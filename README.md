@@ -1,7 +1,7 @@
-Gcore-Baremetal
+G-Core-Labs-Baremetal
 ===============
 
-The Gcore-Baremetal is set of diskimage-builder elements 
+The G-Core-Labs-Baremetal is set of diskimage-builder elements 
 required to build custom cloud image suitable for Baremetal
 Service.
 
