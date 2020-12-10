@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+echo "bonding mode=802.3ad" >> /etc/modules
+echo "8021q" >> /etc/modules
+echo "source /etc/network/interfaces.d/*.cfg" > /etc/network/interfaces
+
+## enable root passwordless login
+# echo "disable_root: false" >> /etc/cloud/cloud.cfg.d/50_enable_root_local_access.cfg
+# passwd -d root

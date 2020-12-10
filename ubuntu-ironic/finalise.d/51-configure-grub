@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+sed -i -e 's/^GRUB_TIMEOUT_STYLE/#GRUB_TIMEOUT_STYLE/' /etc/default/grub
+sed -i -e 's/^GRUB_HIDDEN_TIMEOUT/#GRUB_HIDDEN_TIMEOUT/g' /etc/default/grub
+update-grub2

@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+rm -rf /etc/default/grub.d/50-cloudimg-settings.cfg
